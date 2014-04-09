@@ -4,6 +4,9 @@
 
 $white: white;
 $burnt: #FF5C00;
+$blue: rgba(0, 163, 255, 0.65);
+$yellow: #f1c40f;
+$black: #000000;
 
 $footer-p: rgb(255, 172, 66);
 
@@ -31,7 +34,7 @@ $link-visited-color: lighten($link-color, 10%);
 
 //  NAV BUTTON
 
-$nav-background: rgba(0, 163, 255, 0.65);
+$nav-background: $blue;
 $nav-background-hover: rgba(0, 163, 255, 1);
 
 // BUTTON FONT
@@ -104,6 +107,7 @@ $h3: 3em;
 $h4: 2em;
 $h5: 1em;
 $h6: 0.75em;
+$small: 0.5em;
 
 $oneEm: 1em;
 $one25Em: 1.25em;
@@ -126,23 +130,8 @@ $fiveEm: 5em;
 @mixin drop-shadow {
   box-shadow: 5px 5px 1px rgba(34, 72, 94, 1);
 }
-@mixin line-height150 {
-  line-height: 150%;
-}
-@mixin line-height160 {
-  line-height: 160%;
-}
-@mixin line-height170 {
-  line-height: 170%;
-}
-@mixin line-height180 {
-  line-height: 180%;
-}
-@mixin line-height190 {
-  line-height: 190%;
-}
-@mixin line-height200 {
-  line-height: 200%;
+@mixin letter-spacing {
+  letter-spacing: 4px;
 }
 
 //  POSITIONING
@@ -169,258 +158,6 @@ $fiveEm: 5em;
   vertical-align: middle;
 }
 
-// PADDING
-
-@mixin pT10 {
-  padding-top: 10px;
-}
-@mixin pT20 {
-  padding-top: 20px;
-}
-@mixin pT30 {
-  padding-top: 30px;
-}
-@mixin pT40 {
-  padding-top: 40px;
-}
-@mixin pT50 {
-  padding-top: 50px;
-}
-@mixin pT60 {
-  padding-top: 60px;
-}
-@mixin pT70 {
-  padding-top: 70px;
-}
-@mixin pT80 {
-  padding-top: 80px;
-}
-@mixin pT90 {
-  padding-top: 90px;
-}
-@mixin pT100 {
-  padding-top: 100px;
-}
-
-@mixin pB10 {
-  padding-bottom: 10px;
-}
-@mixin pB20 {
-  padding-bottom: 20px;
-}
-@mixin pB30 {
-  padding-bottom: 30px;
-}
-@mixin pB40 {
-  padding-bottom: 40px;
-}
-@mixin pB50 {
-  padding-bottom: 50px;
-}
-@mixin pB60 {
-  padding-bottom: 60px;
-}
-@mixin pB70 {
-  padding-bottom: 70px;
-}
-@mixin pB80 {
-  padding-bottom: 80px;
-}
-@mixin pB90 {
-  padding-bottom: 90px;
-}
-@mixin pB100 {
-  padding-bottom: 100px;
-}
-
-@mixin pL10 {
-  padding-left: 10px;
-}
-@mixin pL20 {
-  padding-left: 20px;
-}
-@mixin pL30 {
-  padding-left: 30px;
-}
-@mixin pL40 {
-  padding-left: 40px;
-}
-@mixin pL50 {
-  padding-left: 50px;
-}
-@mixin pL60 {
-  padding-left: 60px;
-}
-@mixin pL70 {
-  padding-left: 70px;
-}
-@mixin pL80 {
-  padding-left: 80px;
-}
-@mixin pL90 {
-  padding-left: 90px;
-}
-@mixin pL100 {
-  padding-left: 100px;
-}
-
-@mixin pR10 {
-  padding-right: 10px;
-}
-@mixin pR20 {
-  padding-right: 20px;
-}
-@mixin pR30 {
-  padding-right: 30px;
-}
-@mixin pR40 {
-  padding-right: 40px;
-}
-@mixin pR50 {
-  padding-right: 50px;
-}
-@mixin pR60 {
-  padding-right: 60px;
-}
-@mixin pR70 {
-  padding-right: 70px;
-}
-@mixin pR80 {
-  padding-right: 80px;
-}
-@mixin pR90 {
-  padding-right: 90px;
-}
-@mixin pR100 {
-  padding-right: 100px;
-}
-
-// MARGIN
-
-@mixin mT10 {
-  margin-top: 10px;
-}
-@mixin mT20 {
-  margin-top: 20px;
-}
-@mixin mT30 {
-  margin-top: 30px;
-}
-@mixin mT40 {
-  margin-top: 40px;
-}
-@mixin mT50 {
-  margin-top: 50px;
-}
-@mixin mT60 {
-  margin-top: 60px;
-}
-@mixin mT70 {
-  margin-top: 70px;
-}
-@mixin mT80 {
-  margin-top: 80px;
-}
-@mixin mT90 {
-  margin-top: 90px;
-}
-@mixin mT100 {
-  margin-top: 100px;
-}
-
-@mixin mB10 {
-  margin-bottom: 10px;
-}
-@mixin mB20 {
-  margin-bottom: 20px;
-}
-@mixin mB30 {
-  margin-bottom: 30px;
-}
-@mixin mB40 {
-  margin-bottom: 40px;
-}
-@mixin mB50 {
-  margin-bottom: 50px;
-}
-@mixin mB60 {
-  margin-bottom: 60px;
-}
-@mixin mB70 {
-  margin-bottom: 70px;
-}
-@mixin mB80 {
-  margin-bottom: 80px;
-}
-@mixin mB90 {
-  margin-bottom: 90px;
-}
-@mixin mB100 {
-  margin-bottom: 100px;
-}
-
-@mixin mL10 {
-  margin-left: 10px;
-}
-@mixin mL20 {
-  margin-left: 20px;
-}
-@mixin mL30 {
-  margin-left: 30px;
-}
-@mixin mL40 {
-  margin-left: 40px;
-}
-@mixin mL50 {
-  margin-left: 50px;
-}
-@mixin mL60 {
-  margin-left: 60px;
-}
-@mixin mL70 {
-  margin-left: 70px;
-}
-@mixin mL80 {
-  margin-left: 80px;
-}
-@mixin mL90 {
-  margin-left: 90px;
-}
-@mixin mL100 {
-  margin-left: 100px;
-}
-
-@mixin mR10 {
-  margin-right: 10px;
-}
-@mixin mR20 {
-  margin-right: 20px;
-}
-@mixin mR30 {
-  margin-right: 30px;
-}
-@mixin mR40 {
-  margin-right: 40px;
-}
-@mixin mR50 {
-  margin-right: 50px;
-}
-@mixin mR60 {
-  margin-right: 60px;
-}
-@mixin mR70 {
-  margin-right: 70px;
-}
-@mixin mR80 {
-  margin-right: 80px;
-}
-@mixin mR90 {
-  margin-right: 90px;
-}
-@mixin mR100 {
-  margin-right: 100px;
-}
-
 // TRANSITIONS
 
 @mixin ease-in-out {
@@ -430,12 +167,20 @@ $fiveEm: 5em;
 
 // BACKGROUND IMAGES
 
-@mixin background-home {
-  background: url('../img/background-home.png') no-repeat;
+@mixin background-default {
   background-color: $background-color;
   background-position: center center;
   background-size: cover;
+}
 
+@mixin background-home {
+  background: url('../img/background-home.png') no-repeat;
+  @include background-default;
+}
+
+@mixin background-work {
+  background: url('../img/background-home.png') no-repeat;
+  @include background-default;
 }
 
 // SECTIONS
