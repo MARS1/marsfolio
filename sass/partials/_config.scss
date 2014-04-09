@@ -7,6 +7,7 @@ $burnt: #FF5C00;
 $blue: rgba(0, 163, 255, 0.65);
 $yellow: #f1c40f;
 $black: #000000;
+$lt-grey: #bababa;
 
 $footer-p: rgb(255, 172, 66);
 
@@ -22,7 +23,7 @@ $border-color: #bababa;
 
 $link-nav-color: white;
 
-$link-color: rgba(0, 163, 255, 0.65);
+$link-color: rgba(0, 163, 255, 0.85);
 
 $link-hover-color: #FFF500;
 
@@ -72,6 +73,8 @@ $light: 300;
 $normal: 400;
 $bold: 700;
 $extra-bold: 800;
+
+//  FONT FAMILIES
 
 @mixin light-condensed {
   font-family: $font-condensed;
@@ -172,22 +175,25 @@ $fiveEm: 5em;
   background-position: center center;
   background-size: cover;
 }
-
 @mixin background-home {
   background: url('../img/background-home.png') no-repeat;
   @include background-default;
 }
-
 @mixin background-work {
-  background: url('../img/background-home.png') no-repeat;
+  background: url('../img/background-work.png') no-repeat;
   @include background-default;
 }
+@mixin background-blog {
+  background: url('../img/background-blog.png') no-repeat;
+  @include background-default;
+}
+
 
 // SECTIONS
 
 @mixin section-default {
   height: auto;
-  padding: 10%;
+  padding: 5% 10%;
 }
 
 

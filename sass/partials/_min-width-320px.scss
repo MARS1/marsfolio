@@ -12,17 +12,31 @@ body {
   margin: 0;
   padding: 0;
 }
-header.home {
-  @include background-home;
+header.default {
   height: 300px;
   margin: 0;
   padding: 0;
 }
-header.work {
-  @include background-home;
-  height: 300px;
+header.short {
+  height: 100px;
   margin: 0;
   padding: 0;
+}
+header.home {
+  @include background-home;
+  @extend header.default;
+}
+header.work {
+  @include background-work;
+  @extend header.default;
+}
+header.blog {
+  @include background-blog;
+  @extend header.default;
+}
+header.single-post {
+  @include background-blog;
+  @extend header.short;
 }
 h1, h2, h3, h4, h5, h6 {
   color: white;
@@ -39,7 +53,7 @@ h1 {
 h2 {
   font-size: $h2;
 }
-h2.workHdr {
+h2.articleHdr {
     font-size: $one5Em;
     @include bold-regular;
     @include v-align(100%);
@@ -80,24 +94,51 @@ p {
   @include v-align(150%);
 }
 
-span.tags {
+span.default {
   display: block;
   text-transform: uppercase;
   font-size: $h5;
-  color: $yellow;
   @include light-condensed;
   @include letter-spacing;
   @include margin(2%, 0, 3%, 0);
 }
 
+span.tags:before {
+  content: "skills: ";
+}
+span.blogTags:before {
+  content: "tags: ";
+}
+span.tags {
+  @extend span.default;
+  @extend span.tags:before;
+}
+span.blogTags {
+  @extend span.default;
+  @extend span.blogTags:before;
+}
+
 article.light {
-    background: $yellow;
+  background: $yellow;
 }
 article.medium {
-    background: $blue;
+  background: $blue;
 }
 article.dark {
-    background: $black;
+  background: $black;
+}
+
+img.default {
+  width: 100%;
+  @include border(1px, solid, $white);
+  @include margin(2%, 0, 2%, 0);
+}
+time.default {
+  display: block;
+  font-size: $h6;
+  color: $lt-grey;
+  @include margin(2%, 0, 4%, 0);
+  @include normal-regular;
 }
 
 // NAVIGATION
@@ -110,7 +151,7 @@ ul.main {
   display: block;
   list-style-type: none;
   width: 100%;
-  height: 120px;
+  height: 100px;
   padding-top: 10%;
   margin: 0;
   li {
@@ -212,7 +253,7 @@ section.work {
 section.workList {
   @include section-default;
   h2 {
-    @extend h2.workHdr;
+    @extend h2.articleHdr;
     a {
       color: $white;
       text-decoration: none;
@@ -222,14 +263,62 @@ section.workList {
     }
   }
   span {
+    color: $yellow;
     @extend span.tags;
   }
   img {
-    width: 100%;
-    @include border(1px, solid, $white);
-    @include margin(2%, 0, 2%, 0);
+    @extend img.default;
   }
 }
+
+// BLOG PAGE BODY
+
+section.blogList {
+  background: $white;
+  @extend section.workList;
+  h2 {
+    @extend h2.articleHdr;
+    a {
+      color: $burnt;
+      text-decoration: none;
+    }
+    a:hover {
+    text-decoration: underline;
+    }
+  }
+  time {
+    @extend time.default;
+  }
+  span {
+    color: $blue;
+    @extend span.blogTags;
+  }
+  img {
+    @extend img.default;
+  }
+}
+
+//  SINGLE POST BODY
+
+section.blogPost {
+  background: $white;
+  @extend section.workList;
+  h2 {
+    color: $burnt;
+    @extend h2.articleHdr;
+  }
+  time {
+    @extend time.default;
+  }
+  span {
+    color: $blue;
+    @extend span.blogTags;
+  }
+  img {
+    @extend img.default;
+  }
+}
+
 
 // FOOTER
 
