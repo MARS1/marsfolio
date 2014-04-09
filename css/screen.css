@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,71 +24,274 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../usr/local/rvm/gems/ruby-2.1.0/gems/compass-0.12.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/* line 2, ../sass/partials/_base.scss */
-body {
-  background-color: #e15e67;
-  font-size: 16px;
-}
-
-/* line 7, ../sass/partials/_base.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Oswald", Arial, Helvetica, sans-serif;
-  color: white;
-}
-
-/* line 12, ../sass/partials/_base.scss */
-h1 {
-  font-size: 5em;
-  padding: 5% 0;
-}
-
 @media (min-width: 320px) {
-  /* line 2, ../sass/partials/_min-width-320px.scss */
-  body.home {
-    width: 320px;
-    background: url(img/svg/background-home.svg);
+  /* line 1, ../sass/partials/_min-width-320px.scss */
+  *, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* line 5, ../sass/partials/_min-width-320px.scss */
+  html {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 10, ../sass/partials/_min-width-320px.scss */
+  body {
+    background-color: #ff5c00;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 15, ../sass/partials/_min-width-320px.scss */
+  header.home {
+    background: url("../img/background-home.png") no-repeat;
+    background-color: #ff5c00;
+    background-position: center center;
+    background-size: cover;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 21, ../sass/partials/_min-width-320px.scss */
+  h1, h2, h3, h4, h5, h6 {
+    color: white;
+  }
+
+  /* line 24, ../sass/partials/_min-width-320px.scss */
+  h1.headline {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 4px 4px black;
+    font-size: 4em;
+  }
+
+  /* line 30, ../sass/partials/_min-width-320px.scss */
+  h1 {
+    font-size: 5em;
+  }
+
+  /* line 33, ../sass/partials/_min-width-320px.scss */
+  h2 {
+    font-size: 4em;
+  }
+
+  /* line 36, ../sass/partials/_min-width-320px.scss */
+  h3 {
+    font-size: 3em;
+  }
+
+  /* line 39, ../sass/partials/_min-width-320px.scss */
+  h4 {
+    font-size: 2em;
+  }
+
+  /* line 42, ../sass/partials/_min-width-320px.scss */
+  h5 {
+    font-size: 1em;
+  }
+
+  /* line 45, ../sass/partials/_min-width-320px.scss */
+  h6 {
+    font-size: 0.75em;
+  }
+
+  /* line 49, ../sass/partials/_min-width-320px.scss */
+  p.intro {
+    color: white;
+    font-size: 2em;
+    margin-top: 5%;
+    text-align: center;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px black;
+  }
+
+  /* line 58, ../sass/partials/_min-width-320px.scss */
+  p {
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  /* line 66, ../sass/partials/_min-width-320px.scss */
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 70, ../sass/partials/_min-width-320px.scss */
+  ul.main {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    height: 120px;
+    padding-top: 10%;
+    margin: 0;
+  }
+  /* line 77, ../sass/partials/_min-width-320px.scss */
+  ul.main li {
+    display: inline-block;
+    margin-right: 2%;
+    text-align: center;
+  }
+  /* line 81, ../sass/partials/_min-width-320px.scss */
+  ul.main li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    background: rgba(0, 163, 255, 0.65);
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+  }
+  /* line 92, ../sass/partials/_min-width-320px.scss */
+  ul.main li a:hover {
+    background: #00a3ff;
+    box-shadow: 5px 5px 1px #22485e;
+    transition: all .25s ease-in-out;
+  }
+  /* line 98, ../sass/partials/_min-width-320px.scss */
+  ul.main li:last-child {
+    margin-right: 0;
+  }
+  /* line 101, ../sass/partials/_min-width-320px.scss */
+  ul.main li:first-child {
+    margin-left: 4%;
+  }
+
+  /* line 106, ../sass/partials/_min-width-320px.scss */
+  section.main {
+    background: white;
+    height: auto;
+    padding: 10%;
+  }
+  /* line 109, ../sass/partials/_min-width-320px.scss */
+  section.main h4 {
+    color: #ff5c00;
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 116, ../sass/partials/_min-width-320px.scss */
+  section.main ul.coolPeeps {
+    list-style-type: none;
+    width: 100%;
+    padding-top: 30px;
+  }
+  /* line 120, ../sass/partials/_min-width-320px.scss */
+  section.main ul.coolPeeps li {
+    width: inherit;
+    height: 67px;
+    font-size: 1.25em;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+  /* line 129, ../sass/partials/_min-width-320px.scss */
+  section.main ul.coolPeeps li a {
+    width: inherit;
+    height: 44px;
+    padding: 20px 30px;
+    margin: 0;
+    color: rgba(0, 163, 255, 0.65);
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+  }
+  /* line 138, ../sass/partials/_min-width-320px.scss */
+  section.main ul.coolPeeps li a:hover {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #00a3ff;
+    transition: all .25s ease-in-out;
+  }
+
+  /* line 149, ../sass/partials/_min-width-320px.scss */
+  section.skills {
+    background: #00a3ff;
+    height: auto;
+    padding: 10%;
+  }
+  /* line 152, ../sass/partials/_min-width-320px.scss */
+  section.skills h4 {
+    color: white;
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  /* line 159, ../sass/partials/_min-width-320px.scss */
+  section.skills p {
+    color: white;
+  }
+
+  /* line 164, ../sass/partials/_min-width-320px.scss */
+  footer {
+    height: 40px;
+    color: #ffac42;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    text-align: center;
   }
 }

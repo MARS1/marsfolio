@@ -7,9 +7,10 @@
 
 @import"partials/config";
 
+@import"partials/base";
+
 @import"partials/functions";
 
-@import"partials/base";
 
 @media (min-width: 320px) {
   @import "partials/min-width-320px";
