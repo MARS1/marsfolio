@@ -1,0 +1,21 @@
+{
+  "name": "bower install",
+  "version": "0.0.0",
+  "authors": [
+    "MARS"
+  ],
+  "description": "Mars Portfolio",
+  "license": "MIT",
+  "homepage": "marsfolio.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wordpress": "~3.8.1",
+    "modernizr": "~2.7.2"
+  }
+}

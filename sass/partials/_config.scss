@@ -1,0 +1,52 @@
+
+// FONTS
+
+// COLORS
+
+$font-color: #f9e382;
+
+$header-color: darken($font-color, 7.77%);
+
+$alt-text-color: #ffffff;
+
+$background-color: #e15e67;
+
+$border-color: #bababa;
+
+$link-color: #3ee1ed;
+
+$link-hover-color: darken($link-color, 25%);
+
+$link-active-color: darken($link-color, 10%);
+
+$link-focus-color: $link-hover-color;
+
+$link-visited-color: lighten($link-color, 10%);
+
+// BUTTON FONT
+
+$font-family: "Oswald" , Arial, Helvetica, sans-serif;
+
+//  BUTTON COLOR
+
+$button-background-color: #f9e382;
+
+$button-border-color: darken($button-background-color, 10%);
+
+$button-font-color: white;
+
+//  BUTTONS HOVER COLORS
+
+$button-hover-background-color: darken($button-background-color, 35%);
+
+$button-hover-border-color: darken($button-hover-background-color, 10%);
+
+$button-hover-font-color: white;
+
+$button-active-border-color: #61e09a;
+
+// BUTTON DEFAULT ACTIVE COLORS
+
+$button-active-background-color: #61e09a;
+
+$button-active-font-color: white;

@@ -1,0 +1,52 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+@import"partials/config";
+
+@import"partials/functions";
+
+@import"partials/base";
+
+@media (min-width: 320px) {
+  @import "partials/min-width-320px";
+}
+
+@media (min-width: 480px) {
+  @import "partials/min-width-480px";
+}
+
+@media (min-width: 568px) {
+  @import "partials/min-width-568px";
+}
+
+@media (min-width: 600px) {
+  @import "partials/min-width-600px";
+}
+
+@media (min-width: 768px) {
+  @import "partials/min-width-768px";
+}
+
+@media (min-width: 800px) {
+  @import "partials/min-width-800px";
+}
+
+@media (min-width: 1024px) {
+  @import "partials/min-width-1024px";
+}
+
+@media (min-width: 1080px) {
+  @import "partials/min-width-1080px";
+}
+
+@media (min-width: 1280px) {
+  @import "partials/min-width-1280px";
+}
+
+@media (min-width: 1920px) {
+  @import "partials/min-width-1920px";
+}
