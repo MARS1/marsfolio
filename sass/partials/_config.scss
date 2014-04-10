@@ -4,12 +4,21 @@
 
 $white: white;
 $burnt: #FF5C00;
+$amethyst: #9b59b6;
 $blue: rgba(0, 163, 255, 0.65);
+$belize: #2980b9;
+$concrete: #95a5a6;
+$silver: #bdc3c7;
+$midnight: #2c3e50;
+$postTitle: #c0392b;
+$projTitle: #16a085;
 $yellow: #f1c40f;
 $black: #000000;
 $lt-grey: #bababa;
+$emerald: #2ecc71;
+$wisteria: #8e44ad;
 
-$footer-p: rgb(255, 172, 66);
+$footer-p: $white;
 
 $font-color: #f9e382;
 
@@ -17,7 +26,12 @@ $header-color: darken($font-color, 7.77%);
 
 $alt-text-color: #ffffff;
 
-$background-color: #FF5C00;
+// $background-color-blog: #d35400;
+$background-color-blog: #c0392b;
+$background-color-home: #2980b9;
+$background-color-work: #27ae60;
+$background-color-contact: #8e44ad;
+
 
 $border-color: #bababa;
 
@@ -171,7 +185,6 @@ $fiveEm: 5em;
 // BACKGROUND IMAGES
 
 @mixin background-default {
-  background-color: $background-color;
   background-position: center center;
   background-size: cover;
 }
@@ -187,7 +200,10 @@ $fiveEm: 5em;
   background: url('../img/background-blog.png') no-repeat;
   @include background-default;
 }
-
+@mixin background-contact {
+  background: url('../img/background-contact.png') no-repeat;
+  @include background-default;
+}
 
 // SECTIONS
 

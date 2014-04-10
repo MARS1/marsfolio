@@ -7,10 +7,25 @@ html {
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: $background-color;
+body.default {
   margin: 0;
   padding: 0;
+}
+body.homeBg {
+  background-color: $background-color-home;
+  @extend body.default;
+}
+body.workBg {
+  background-color: $background-color-work;
+  @extend body.default;
+}
+body.blogBg {
+  background-color: $background-color-blog;
+  @extend body.default;
+}
+body.contactBg {
+  background-color: $background-color-contact;
+  @extend body.default;
 }
 header.default {
   height: 300px;
@@ -34,14 +49,23 @@ header.blog {
   @include background-blog;
   @extend header.default;
 }
+header.contact {
+  @include background-contact;
+  @extend header.default;
+}
 header.single-post {
   @include background-blog;
+  @extend header.short;
+}
+header.single-project {
+  @include background-work;
   @extend header.short;
 }
 h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 h1.headline {
+  @include margin(4%, 0, 0, 0);
   @include light-condensed-bold;
   @include center;
   @include text-shadow-bold;
@@ -55,7 +79,7 @@ h2 {
 }
 h2.articleHdr {
     font-size: $one5Em;
-    @include bold-regular;
+    @include normal-regular;
     @include v-align(100%);
     @include padding(5%, 0, 5%, 0);
   }
@@ -70,7 +94,7 @@ h4.bodyHdr {
     @include bold-regular;
     @include v-align(120%);
     @include padding(5%, 0, 5%, 0);
-  }
+}
 
 h5 {
   font-size: $h5;
@@ -109,20 +133,30 @@ span.tags:before {
 span.blogTags:before {
   content: "tags: ";
 }
+span.projUrl:before {
+  content: "url: ";
+}
 span.tags {
+  font-size: $h6;
   @extend span.default;
   @extend span.tags:before;
 }
 span.blogTags {
+  color: $concrete;
+  font-size: $h6;
   @extend span.default;
   @extend span.blogTags:before;
 }
-
+span.projUrl {
+  color: $concrete;
+  @extend span.default;
+  @extend span.projUrl:before;
+}
 article.light {
   background: $yellow;
 }
 article.medium {
-  background: $blue;
+  background: $belize;
 }
 article.dark {
   background: $black;
@@ -136,7 +170,7 @@ img.default {
 time.default {
   display: block;
   font-size: $h6;
-  color: $lt-grey;
+  color: $silver;
   @include margin(2%, 0, 4%, 0);
   @include normal-regular;
 }
@@ -188,9 +222,9 @@ ul.main {
 section.main {
   background: $white;
   @include section-default;
-  h4 {
-    color: $burnt;
-    @extend h4.bodyHdr;
+  h2 {
+    color: $belize;
+    @extend h2.articleHdr;
   }
   ul.coolPeeps {
     list-style-type: none; 
@@ -228,9 +262,9 @@ section.main {
 section.skills {
   background: $nav-background-hover;
   @include section-default;
-  h4 {
+  h2 {
     color: $white;
-    @extend h4.bodyHdr
+    @extend h2.articleHdr;
   }
   p {
     color: $white;
@@ -241,16 +275,17 @@ section.skills {
 
 // WORK PAGE BODY
 
-section.work {
+section.workBody {
   background: $white;
   @include section-default;
-  h4 {
-    color: $burnt;
-    @extend h4.bodyHdr;
+  h2 {
+    color: $projTitle;
+    @extend h2.articleHdr;
   }
 }
 
 section.workList {
+  background: $emerald;
   @include section-default;
   h2 {
     @extend h2.articleHdr;
@@ -263,7 +298,6 @@ section.workList {
     }
   }
   span {
-    color: $yellow;
     @extend span.tags;
   }
   img {
@@ -277,9 +311,10 @@ section.blogList {
   background: $white;
   @extend section.workList;
   h2 {
+    @include v-align(130%);
     @extend h2.articleHdr;
     a {
-      color: $burnt;
+      color: $postTitle;
       text-decoration: none;
     }
     a:hover {
@@ -290,7 +325,6 @@ section.blogList {
     @extend time.default;
   }
   span {
-    color: $blue;
     @extend span.blogTags;
   }
   img {
@@ -304,14 +338,14 @@ section.blogPost {
   background: $white;
   @extend section.workList;
   h2 {
-    color: $burnt;
+    color: $postTitle;
+    @include v-align(130%);
     @extend h2.articleHdr;
   }
   time {
     @extend time.default;
   }
   span {
-    color: $blue;
     @extend span.blogTags;
   }
   img {
@@ -319,6 +353,48 @@ section.blogPost {
   }
 }
 
+//  SINGLE PROJECT BODY
+
+section.projPost {
+  background: $white;
+  @extend section.workList;
+  h2 {
+    color: $projTitle;
+    @extend h2.articleHdr;
+  }
+  time {
+    @extend time.default;
+  }
+  span.url {
+    @extend span.projUrl;
+  }
+  span {
+    @extend span.blogTags;
+    a {
+      text-decoration: none;
+      color: $burnt;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+  img {
+    @include margin(5%, 0, 5%, 0);
+    @extend img.default;
+  }
+}
+
+// CONTACT BODY
+
+section.contactBody {
+  background: $white;
+  @extend section.workList;
+  h2 {
+    color: $wisteria;
+    @include v-align(130%);
+    @extend h2.articleHdr;
+  }
+}
 
 // FOOTER
 
