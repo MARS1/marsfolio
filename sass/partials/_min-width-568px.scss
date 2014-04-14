@@ -1,0 +1,23 @@
+
+// NAVIGATION
+header.single-post {
+	height: 130px;
+    @include background-blog;
+}
+header.single-project {
+	height: 130px;
+    @include background-work;
+}
+ul.main {
+	padding-left: 14%;
+}
+section.homeBody {
+  ul.coolPeeps {
+    li {
+      width: 50%;
+      a {
+        padding: 5% 10%;
+      }
+    }
+  }
+}

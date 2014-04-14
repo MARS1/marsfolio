@@ -83,30 +83,98 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   }
 
   /* line 10, ../sass/partials/_min-width-320px.scss */
-  body {
-    background-color: #ff5c00;
+  body.default, body.homeBg, body.workBg, body.blogBg, body.contactBg {
     margin: 0;
     padding: 0;
   }
 
-  /* line 15, ../sass/partials/_min-width-320px.scss */
-  header.home {
-    background: url("../img/background-home.png") no-repeat;
-    background-color: #ff5c00;
-    background-position: center center;
-    background-size: cover;
+  /* line 14, ../sass/partials/_min-width-320px.scss */
+  body.homeBg {
+    background-color: #2980b9;
+  }
+
+  /* line 18, ../sass/partials/_min-width-320px.scss */
+  body.workBg {
+    background-color: #27ae60;
+  }
+
+  /* line 22, ../sass/partials/_min-width-320px.scss */
+  body.blogBg {
+    background-color: #c0392b;
+  }
+
+  /* line 26, ../sass/partials/_min-width-320px.scss */
+  body.contactBg {
+    background-color: #8e44ad;
+  }
+
+  /* line 30, ../sass/partials/_min-width-320px.scss */
+  header.default, header.home, header.work, header.blog, header.contact {
     height: 300px;
     margin: 0;
     padding: 0;
   }
 
-  /* line 21, ../sass/partials/_min-width-320px.scss */
+  /* line 35, ../sass/partials/_min-width-320px.scss */
+  header.short, header.single-post, header.single-project {
+    height: 100px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 40, ../sass/partials/_min-width-320px.scss */
+  header.home {
+    background: url("../img/background-home.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 44, ../sass/partials/_min-width-320px.scss */
+  header.work {
+    background: url("../img/background-work.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 48, ../sass/partials/_min-width-320px.scss */
+  header.blog {
+    background: url("../img/background-blog.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 52, ../sass/partials/_min-width-320px.scss */
+  header.contact {
+    background: url("../img/background-contact.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 56, ../sass/partials/_min-width-320px.scss */
+  header.single-post {
+    background: url("../img/background-blog.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 60, ../sass/partials/_min-width-320px.scss */
+  header.single-project {
+    background: url("../img/background-work.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 64, ../sass/partials/_min-width-320px.scss */
   h1, h2, h3, h4, h5, h6 {
     color: white;
   }
 
-  /* line 24, ../sass/partials/_min-width-320px.scss */
+  /* line 67, ../sass/partials/_min-width-320px.scss */
   h1.headline {
+    margin-top: 4%;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 700;
     text-align: center;
@@ -114,37 +182,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-size: 4em;
   }
 
-  /* line 30, ../sass/partials/_min-width-320px.scss */
+  /* line 74, ../sass/partials/_min-width-320px.scss */
   h1 {
     font-size: 5em;
   }
 
-  /* line 33, ../sass/partials/_min-width-320px.scss */
+  /* line 77, ../sass/partials/_min-width-320px.scss */
   h2 {
     font-size: 4em;
   }
 
-  /* line 36, ../sass/partials/_min-width-320px.scss */
+  /* line 80, ../sass/partials/_min-width-320px.scss */
+  h2.articleHdr, section.homeBody h2, section.skills h2, section.workBody h2, section.workList h2, section.blogList h2, section.blogPost h2, section.projPost h2, section.contactBody h2 {
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    line-height: 100%;
+    padding-top: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-left: 0;
+  }
+
+  /* line 86, ../sass/partials/_min-width-320px.scss */
   h3 {
     font-size: 3em;
   }
 
-  /* line 39, ../sass/partials/_min-width-320px.scss */
+  /* line 89, ../sass/partials/_min-width-320px.scss */
   h4 {
     font-size: 2em;
   }
 
-  /* line 42, ../sass/partials/_min-width-320px.scss */
+  /* line 92, ../sass/partials/_min-width-320px.scss */
+  h4.bodyHdr {
+    font-size: 1.5em;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    padding-top: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-left: 0;
+  }
+
+  /* line 99, ../sass/partials/_min-width-320px.scss */
   h5 {
     font-size: 1em;
   }
 
-  /* line 45, ../sass/partials/_min-width-320px.scss */
+  /* line 102, ../sass/partials/_min-width-320px.scss */
   h6 {
     font-size: 0.75em;
   }
 
-  /* line 49, ../sass/partials/_min-width-320px.scss */
+  /* line 106, ../sass/partials/_min-width-320px.scss */
   p.intro {
     color: white;
     font-size: 2em;
@@ -155,7 +247,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-shadow: 2px 2px black;
   }
 
-  /* line 58, ../sass/partials/_min-width-320px.scss */
+  /* line 115, ../sass/partials/_min-width-320px.scss */
   p {
     font-size: 1em;
     font-family: "Open Sans", sans-serif;
@@ -163,28 +255,113 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     line-height: 150%;
   }
 
-  /* line 66, ../sass/partials/_min-width-320px.scss */
+  /* line 121, ../sass/partials/_min-width-320px.scss */
+  span.default, span.tags, section.workList span, section.blogList span, section.blogPost span, section.projPost span, section.contactBody span, span.blogTags, span.projUrl, section.projPost span.url {
+    display: block;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 3%;
+    margin-left: 0;
+  }
+
+  /* line 130, ../sass/partials/_min-width-320px.scss */
+  span.tags:before, span.tags, section.workList span, section.blogList span, section.blogPost span, section.projPost span, section.contactBody span, section.workList span:before, section.blogList span:before, section.blogPost span:before, section.projPost span:before, section.contactBody span:before {
+    content: "skills: ";
+  }
+
+  /* line 133, ../sass/partials/_min-width-320px.scss */
+  span.blogTags:before, span.blogTags, section.blogList span, section.blogPost span, section.projPost span, section.blogList span:before, section.blogPost span:before, section.projPost span:before {
+    content: "tags: ";
+  }
+
+  /* line 136, ../sass/partials/_min-width-320px.scss */
+  span.projUrl:before, span.projUrl, section.projPost span.url, section.projPost span.url:before {
+    content: "url: ";
+  }
+
+  /* line 139, ../sass/partials/_min-width-320px.scss */
+  span.tags, section.workList span, section.blogList span, section.blogPost span, section.projPost span, section.contactBody span {
+    font-size: 0.75em;
+  }
+
+  /* line 144, ../sass/partials/_min-width-320px.scss */
+  span.blogTags, section.blogList span, section.blogPost span, section.projPost span {
+    color: #95a5a6;
+    font-size: 0.75em;
+  }
+
+  /* line 150, ../sass/partials/_min-width-320px.scss */
+  span.projUrl, section.projPost span.url {
+    color: #95a5a6;
+  }
+
+  /* line 155, ../sass/partials/_min-width-320px.scss */
+  article.light {
+    background: #f1c40f;
+  }
+
+  /* line 158, ../sass/partials/_min-width-320px.scss */
+  article.medium {
+    background: #2980b9;
+  }
+
+  /* line 161, ../sass/partials/_min-width-320px.scss */
+  article.dark {
+    background: black;
+  }
+
+  /* line 165, ../sass/partials/_min-width-320px.scss */
+  img.default, section.workList img, section.blogList img, section.blogPost img, section.projPost img, section.contactBody img {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 2%;
+    margin-left: 0;
+  }
+
+  /* line 170, ../sass/partials/_min-width-320px.scss */
+  time.default, section.blogList time, section.blogPost time, section.projPost time {
+    display: block;
+    font-size: 0.75em;
+    color: #bdc3c7;
+    margin-top: 2%;
+    margin-right: 0;
+    margin-bottom: 4%;
+    margin-left: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+  }
+
+  /* line 180, ../sass/partials/_min-width-320px.scss */
   nav {
     margin: 0;
     padding: 0;
   }
 
-  /* line 70, ../sass/partials/_min-width-320px.scss */
+  /* line 184, ../sass/partials/_min-width-320px.scss */
   ul.main {
     display: block;
     list-style-type: none;
     width: 100%;
-    height: 120px;
+    height: 100px;
     padding-top: 10%;
     margin: 0;
   }
-  /* line 77, ../sass/partials/_min-width-320px.scss */
+  /* line 191, ../sass/partials/_min-width-320px.scss */
   ul.main li {
     display: inline-block;
     margin-right: 2%;
     text-align: center;
   }
-  /* line 81, ../sass/partials/_min-width-320px.scss */
+  /* line 195, ../sass/partials/_min-width-320px.scss */
   ul.main li a {
     color: white;
     text-decoration: none;
@@ -197,44 +374,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-transform: uppercase;
     transition: all .25s ease-in-out;
   }
-  /* line 92, ../sass/partials/_min-width-320px.scss */
+  /* line 206, ../sass/partials/_min-width-320px.scss */
   ul.main li a:hover {
     background: #00a3ff;
     box-shadow: 5px 5px 1px #22485e;
     transition: all .25s ease-in-out;
   }
-  /* line 98, ../sass/partials/_min-width-320px.scss */
+  /* line 212, ../sass/partials/_min-width-320px.scss */
   ul.main li:last-child {
     margin-right: 0;
   }
-  /* line 101, ../sass/partials/_min-width-320px.scss */
+  /* line 215, ../sass/partials/_min-width-320px.scss */
   ul.main li:first-child {
     margin-left: 4%;
   }
 
-  /* line 106, ../sass/partials/_min-width-320px.scss */
-  section.main {
+  /* line 222, ../sass/partials/_min-width-320px.scss */
+  section.homeBody {
     background: white;
+    float: left;
     height: auto;
-    padding: 10%;
+    padding: 5% 10%;
   }
-  /* line 109, ../sass/partials/_min-width-320px.scss */
-  section.main h4 {
-    color: #ff5c00;
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
+  /* line 226, ../sass/partials/_min-width-320px.scss */
+  section.homeBody h2 {
+    color: #2980b9;
   }
-  /* line 116, ../sass/partials/_min-width-320px.scss */
-  section.main ul.coolPeeps {
+  /* line 230, ../sass/partials/_min-width-320px.scss */
+  section.homeBody ul.coolPeeps {
     list-style-type: none;
     width: 100%;
+    float: left;
     padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
   }
-  /* line 120, ../sass/partials/_min-width-320px.scss */
-  section.main ul.coolPeeps li {
+  /* line 235, ../sass/partials/_min-width-320px.scss */
+  section.homeBody ul.coolPeeps li {
+    float: left;
     width: inherit;
     height: 67px;
     font-size: 1.25em;
@@ -245,18 +423,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
   }
-  /* line 129, ../sass/partials/_min-width-320px.scss */
-  section.main ul.coolPeeps li a {
+  /* line 245, ../sass/partials/_min-width-320px.scss */
+  section.homeBody ul.coolPeeps li a {
     width: inherit;
     height: 44px;
     padding: 20px 30px;
     margin: 0;
-    color: rgba(0, 163, 255, 0.65);
+    color: rgba(0, 163, 255, 0.85);
     text-decoration: none;
+    text-align: center;
     transition: all .25s ease-in-out;
   }
-  /* line 138, ../sass/partials/_min-width-320px.scss */
-  section.main ul.coolPeeps li a:hover {
+  /* line 255, ../sass/partials/_min-width-320px.scss */
+  section.homeBody ul.coolPeeps li a:hover {
     color: white;
     text-decoration: none;
     border-radius: 5px;
@@ -264,34 +443,167 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transition: all .25s ease-in-out;
   }
 
-  /* line 149, ../sass/partials/_min-width-320px.scss */
+  /* line 266, ../sass/partials/_min-width-320px.scss */
   section.skills {
+    clear: both;
     background: #00a3ff;
     height: auto;
-    padding: 10%;
+    padding: 5% 10%;
   }
-  /* line 152, ../sass/partials/_min-width-320px.scss */
-  section.skills h4 {
+  /* line 270, ../sass/partials/_min-width-320px.scss */
+  section.skills h2 {
     color: white;
-    font-size: 1.5em;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
-  /* line 159, ../sass/partials/_min-width-320px.scss */
+  /* line 274, ../sass/partials/_min-width-320px.scss */
   section.skills p {
     color: white;
   }
 
-  /* line 164, ../sass/partials/_min-width-320px.scss */
-  footer {
+  /* line 283, ../sass/partials/_min-width-320px.scss */
+  section.workBody {
+    background: white;
+    height: auto;
+    padding: 5% 10%;
+  }
+  /* line 286, ../sass/partials/_min-width-320px.scss */
+  section.workBody h2 {
+    color: #16a085;
+  }
+
+  /* line 292, ../sass/partials/_min-width-320px.scss */
+  section.workList, section.blogList, section.blogPost, section.projPost, section.contactBody {
+    background: #2ecc71;
+    height: auto;
+    padding: 5% 10%;
+  }
+  /* line 297, ../sass/partials/_min-width-320px.scss */
+  section.workList h2 a, section.blogList h2 a, section.blogPost h2 a, section.projPost h2 a, section.contactBody h2 a {
+    color: white;
+    text-decoration: none;
+  }
+  /* line 301, ../sass/partials/_min-width-320px.scss */
+  section.workList h2 a:hover, section.blogList h2 a:hover, section.blogPost h2 a:hover, section.projPost h2 a:hover, section.contactBody h2 a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 315, ../sass/partials/_min-width-320px.scss */
+  section.blogList {
+    background: white;
+  }
+  /* line 318, ../sass/partials/_min-width-320px.scss */
+  section.blogList h2 {
+    line-height: 130%;
+  }
+  /* line 321, ../sass/partials/_min-width-320px.scss */
+  section.blogList h2 a {
+    color: #c0392b;
+    text-decoration: none;
+  }
+  /* line 325, ../sass/partials/_min-width-320px.scss */
+  section.blogList h2 a:hover {
+    text-decoration: underline;
+  }
+
+  /* line 342, ../sass/partials/_min-width-320px.scss */
+  section.blogPost {
+    background: white;
+  }
+  /* line 345, ../sass/partials/_min-width-320px.scss */
+  section.blogPost h2 {
+    color: #c0392b;
+    line-height: 130%;
+  }
+
+  /* line 363, ../sass/partials/_min-width-320px.scss */
+  section.projPost {
+    background: white;
+  }
+  /* line 366, ../sass/partials/_min-width-320px.scss */
+  section.projPost h2 {
+    color: #16a085;
+  }
+  /* line 378, ../sass/partials/_min-width-320px.scss */
+  section.projPost span a {
+    text-decoration: none;
+    color: #ff5c00;
+  }
+  /* line 382, ../sass/partials/_min-width-320px.scss */
+  section.projPost span a:hover {
+    text-decoration: underline;
+  }
+  /* line 386, ../sass/partials/_min-width-320px.scss */
+  section.projPost img {
+    margin-top: 5%;
+    margin-right: 0;
+    margin-bottom: 5%;
+    margin-left: 0;
+  }
+
+  /* line 394, ../sass/partials/_min-width-320px.scss */
+  section.contactBody {
+    background: white;
+  }
+  /* line 397, ../sass/partials/_min-width-320px.scss */
+  section.contactBody h2 {
+    color: #8e44ad;
+    line-height: 130%;
+  }
+
+  /* line 406, ../sass/partials/_min-width-320px.scss */
+  footer.global {
+    width: 100%;
     height: 40px;
-    color: #ffac42;
-    padding-top: 30px;
-    padding-bottom: 10px;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 40px;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     text-align: center;
+  }
+}
+@media (min-width: 480px) {
+  /* line 4, ../sass/partials/_min-width-480px.scss */
+  ul.main {
+    padding-left: 8%;
+  }
+  /* line 6, ../sass/partials/_min-width-480px.scss */
+  ul.main li:last-child {
+    margin-right: 0;
+  }
+  /* line 9, ../sass/partials/_min-width-480px.scss */
+  ul.main li:first-child {
+    margin-left: 4%;
+  }
+}
+@media (min-width: 568px) {
+  /* line 3, ../sass/partials/_min-width-568px.scss */
+  header.single-post {
+    height: 130px;
+    background: url("../img/background-blog.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 7, ../sass/partials/_min-width-568px.scss */
+  header.single-project {
+    height: 130px;
+    background: url("../img/background-work.png") no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+  /* line 11, ../sass/partials/_min-width-568px.scss */
+  ul.main {
+    padding-left: 14%;
+  }
+
+  /* line 16, ../sass/partials/_min-width-568px.scss */
+  section.homeBody ul.coolPeeps li {
+    width: 50%;
+  }
+  /* line 18, ../sass/partials/_min-width-568px.scss */
+  section.homeBody ul.coolPeeps li a {
+    padding: 5% 10%;
   }
 }
