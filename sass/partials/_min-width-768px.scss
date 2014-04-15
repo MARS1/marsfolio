@@ -1,0 +1,13 @@
+
+// NAVIGATION & HEADER
+header.single-post {
+	height: 11rem;
+    @include background-blog;
+}
+header.single-project {
+	height: 11rem;
+    @include background-work;
+}
+ul.main {
+	padding-left: 12rem;
+}

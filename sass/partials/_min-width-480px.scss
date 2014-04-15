@@ -1,12 +1,29 @@
 
 // NAVIGATION
-
+header.home {
+  height: 19rem;
+  @include background-home;
+}
+header.work {
+  height: 19rem;
+  @include background-work;
+}
+header.blog {
+  height: 19rem;
+  @include background-blog;
+}
+header.contact {
+  height: 19rem;
+  @include background-contact;
+}
+header.single-post {
+	height: 7rem;
+    @include background-blog;
+}
+header.single-project {
+	height: 7rem;
+    @include background-work;
+}
 ul.main {
-	padding-left: 8%;
-  li:last-child {
-    margin-right: 0;
-  }
-  li:first-child {
-    margin-left: 4%;
-  }
+	padding-left: 3rem;
 }

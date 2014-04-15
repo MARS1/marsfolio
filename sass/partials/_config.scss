@@ -92,23 +92,23 @@ $extra-bold: 800;
 
 @mixin light-condensed {
   font-family: $font-condensed;
-  font-weight: $light; 
+  font-weight: $light;
 }
 @mixin light-condensed-bold {
   font-family: $font-condensed;
-  font-weight: $bold; 
+  font-weight: $bold;
 }
 @mixin normal-regular {
   font-family: $font-regular;
-  font-weight: $normal; 
+  font-weight: $normal;
 }
 @mixin bold-regular {
   font-family: $font-regular;
-  font-weight: $bold; 
+  font-weight: $bold;
 }
 @mixin extraBold-regular {
   font-family: $font-regular;
-  font-weight: $extra-bold; 
+  font-weight: $extra-bold;
 }
 
 @mixin uppercase {
@@ -209,7 +209,18 @@ $fiveEm: 5em;
 
 @mixin section-default {
   height: auto;
-  padding: 5% 10%;
+  padding: 3% 10%;
 }
 
-
+// LOGO
+@mixin logo {
+  display: block;
+  text-indent: -9999px;
+  width: 175px;
+  height: 52px;
+  margin: 0 auto;
+  padding: 0;
+  background: url('../img/svg/marsfolio.svg');
+  background-size: 175px 52px;
+  background-repeat: no-repeat;
+}

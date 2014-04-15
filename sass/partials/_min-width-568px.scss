@@ -1,15 +1,31 @@
 
-// NAVIGATION
+// NAVIGATION & HEADER
+header.home {
+  height: 18rem;
+  @include background-home;
+}
+header.work {
+  height: 18rem;
+  @include background-work;
+}
+header.blog {
+  height: 18rem;
+  @include background-blog;
+}
+header.contact {
+  height: 18rem;
+  @include background-contact;
+}
 header.single-post {
-	height: 130px;
+	height: 8rem;
     @include background-blog;
 }
 header.single-project {
-	height: 130px;
+	height: 8rem;
     @include background-work;
 }
 ul.main {
-	padding-left: 14%;
+	padding-left: 6rem;
 }
 section.homeBody {
   ul.coolPeeps {

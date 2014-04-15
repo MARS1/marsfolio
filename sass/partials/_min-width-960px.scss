@@ -1,0 +1,50 @@
+
+// NAVIGATION & HEADER
+header.home {
+  height: 22rem;
+  @include background-home;
+}
+header.work {
+  height: 22rem;
+  @include background-work;
+}
+header.blog {
+  height: 22rem;
+  @include background-blog;
+}
+header.contact {
+  height: 22rem;
+  @include background-contact;
+}
+header.single-post {
+  height: 13rem;
+    @include background-blog;
+}
+header.single-project {
+  height: 13rem;
+    @include background-work;
+}
+ul.main {
+  padding-left: 17rem;
+}
+h1.headline {
+  @include margin(4rem, 0, 0, 0);
+}
+
+// SECTIONS
+
+section.homeBody,
+section.skills,
+section.blogList,
+section.workBody,
+section.workList,
+section.contactBody,
+section.projPost,
+section.blogPost
+ {
+	width: 100%;
+	div.maxWidthWrapper {
+		width: 777px;
+		margin: 0 auto;
+	}
+}

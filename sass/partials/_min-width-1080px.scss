@@ -1,0 +1,28 @@
+// NAVIGATION & HEADER
+header.home {
+  height: 23rem;
+  @include background-home;
+}
+header.work {
+  height: 23rem;
+  @include background-work;
+}
+header.blog {
+  height: 23rem;
+  @include background-blog;
+}
+header.contact {
+  height: 23rem;
+  @include background-contact;
+}
+header.single-post {
+  height: 15rem;
+    @include background-blog;
+}
+header.single-project {
+  height: 15rem;
+    @include background-work;
+}
+ul.main {
+  padding-left: 21rem;
+}

@@ -1,32 +1,27 @@
-
-// NAVIGATION & HEADER
 header.home {
-  height: 21rem;
+  height: 19rem;
   @include background-home;
 }
 header.work {
-  height: 21rem;
+  height: 19rem;
   @include background-work;
 }
 header.blog {
-  height: 21rem;
+  height: 19rem;
   @include background-blog;
 }
 header.contact {
-  height: 21rem;
+  height: 19rem;
   @include background-contact;
 }
 header.single-post {
-  height: 11rem;
+	height: 9rem;
     @include background-blog;
 }
 header.single-project {
-  height: 11rem;
+	height: 9rem;
     @include background-work;
 }
 ul.main {
-  padding-left: 13rem;
-}
-h1.headline {
-  @include margin(3rem, 0, 0, 0);
+	padding-left: 8rem;
 }

@@ -29,12 +29,20 @@
   @import "partials/min-width-600px";
 }
 
+@media (min-width: 640px) {
+  @import "partials/min-width-640px";
+}
+
 @media (min-width: 768px) {
   @import "partials/min-width-768px";
 }
 
 @media (min-width: 800px) {
   @import "partials/min-width-800px";
+}
+
+@media (min-width: 960px) {
+  @import "partials/min-width-960px";
 }
 
 @media (min-width: 1024px) {
@@ -47,6 +55,14 @@
 
 @media (min-width: 1280px) {
   @import "partials/min-width-1280px";
+}
+
+@media (min-width: 1366px) {
+  @import "partials/min-width-1366px";
+}
+
+@media (min-width: 1680px) {
+  @import "partials/min-width-1680px";
 }
 
 @media (min-width: 1920px) {
